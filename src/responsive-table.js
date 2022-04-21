@@ -2,8 +2,8 @@
 	const dev = window.location.hostname.indexOf('localhost') > -1
 	const store = { data: [], columns: {}, highlightRows: [] }
 	const copy = {
-		hed: 'Hed',
-		dek: 'Dek goes here.',
+		hed: 'Header',
+		dek: 'Description (Can be edited).',
 		sourcePre: 'SOURCE',
 		sourcePost: 'Sources',
 	}
@@ -24,7 +24,7 @@
 	const getColumnNames = (row) => {
 		const columns = row.split('\t')
 		debug('columns', columns)
-		if(columns.length <= 1) throw new Error('not enough columns')
+		if(columns.length <= 1) throw new Error('Warning: Not enough columns!')
 		else {
 			return columns.map(c => c.trim())
 		}
@@ -46,7 +46,7 @@
 			// debug('data', data)
 			return { names, data }
 		} else {
-			throw new Error('not enough rows')
+			throw new Error('Warning! Not enough rows!')
 		}
 	}
 

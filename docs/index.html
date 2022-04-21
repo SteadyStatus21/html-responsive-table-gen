@@ -4,7 +4,7 @@
 <head>
 	<meta charset='utf-8'>
 	<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
-	<title>Responsive table generator: HTML and CSS</title>
+	<title>Responsive Table with HTML - SteadyStatus21</title>
 	<meta name='description' content='100% HTML and CSS responsive table generator. Copy and paste from Excel or Google Spreadsheet.'>
 	<meta name='viewport' content='width=device-width, initial-scale=1'>
 	<link rel='stylesheet' href='base.css'>
@@ -17,16 +17,16 @@
 <body>
 	<div class='container'>
 		<section>
-			<h2>Responsive Table Generator v2.0.1</h2>
+			<h2>Responsive Table Generator v2.1.0</h2>
 			<p class='intro'>
 				A complete HTML/CSS solution for quick &amp; elegant responsive tables. Code is unminified for easy customization.
 			</p>
 			<p class='instructions'>
-				Copy and paste data from Excel or Google spreadsheets.
-				<a class='demo' href='#'>Load sample data</a>.
+				Copy and paste data from Excel or Google spreadsheets into the box below. 
+				<a class='demo' href='#'>Load sample data</a>. <b>CLEARS CURRENT DATA IN THE BOX </b>
 			</p>
 			<textarea class='input'></textarea>
-			<button class='get-started'>Get started</button>
+			<button class='get-started'>Import</button>
 		</section>
 		<section>
 			<div class='after hide'>
@@ -36,18 +36,18 @@
 					<div class='column-types'></div>
 				</div>
 				<h3>Options</h3>
-				<p class='instructions'>Max # of rows to show on mobile? [default: show all] (
-					<strong>recommended:</strong> 5 to 10)</p>
+				<p class='instructions'>Maximum rows to show on Mobile? [Default: Show all] (
+				<strong>Recommended:</strong> 5 to 10)</p>
 				<div class='mobile-rows-container'>
 					<input class='mobile-rows-slider' type='range' min='1' max='100' step='1' value='5'>
 					<input class='mobile-rows-text' value='5'>
 				</div>
 				<p class='instructions'>
-					Columns to hide on mobile? [default: hide none] (comma-delimited column names)
+					Columns to hide on Mobile? [Default: Hide nothing] (comma-delimited column names)
 				</p>
 				<input class='hide-columns' placeholder='City,Price'>
 				<p class='instructions'>
-					When to switch to mobile layout? [default: 600px] (resize browser and click "update table" to see effect)
+					When should it switch to Mobile Layout? [Default: 600px] (Resize your browser to preview!)
 				</p>
 				<div class='breakpoint-container'>
 					<input class='breakpoint-slider' type='range' min='240' max='1200' step='1' value='600'>
@@ -59,16 +59,16 @@
 					<button>On</button>
 					<button class='selected'>Off</button>
 				</div>
-				<button class='create-table'>Create table</button>
+				<button class='create-table'>Create Table</button>
 				<div class='final hide'>
-					<h3>Preview</h3>
+					<h3>Current Preview (Does Not Auto-Update)</h3>
 					<p>
-						Replace underlined text with your copy below, then click "generate code". If you don't want a hed or a dek, simply delete
+						Replace underlined text with your copy below, then click "generate code". If you don't want a heading or a description, simply delete
 						the contents. The generated code will remove the whitespace. Click a row to toggle highlighting.
 					</p>
 					<p class='updated invisible'>updated options</p>
 					<div class='preview'></div>
-					<button class='generate-code'>Generate code</button>
+					<button class='generate-code'>Generate HTML</button>
 				</div>
 			</div>
 		</section>
@@ -79,15 +79,8 @@
 			</div>
 			<div class='credits'>
 				<p>Created by
-					<a target='_blank' href='https://twitter.com/codenberg'>Russell Goldenberg</a> and
-					<a target='_blank' href='https://twitter.com/elainanatario'>Elaina Natario</a>. Inspired by
-					<a target='_blank' href='http://blog.apps.npr.org/2014/05/09/responsive-data-tables.html'>NPR</a>. See the
-					<a target='_blank' href='https://github.com/russellgoldenberg/responsive-table-generator'>github repo</a> to submit issues and/or feature requests. Email russellgoldenberg@gmail.com with any questions.
-				</p>
-				<p class='russell'>
-					<a target='_blank' href='http://russellgoldenberg.com'>
-						<img src='codenberg.png'>
-					</a>
+					<a target='_blank' href='https://github.com/steadystatus21'>SteadyStatus21</a>
+					<a target='_blank' href='https://twitter.com/codenberg'>code from Russell Goldenberg</a>!
 				</p>
 			</div>
 		</section>

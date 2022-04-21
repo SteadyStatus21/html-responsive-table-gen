@@ -4,8 +4,8 @@
 	var dev = window.location.hostname.indexOf('localhost') > -1;
 	var store = { data: [], columns: {}, highlightRows: [] };
 	var copy = {
-		hed: 'Hed',
-		dek: 'Dek goes here.',
+		hed: 'Header',
+		dek: 'Description (Can be edited).',
 		sourcePre: 'SOURCE',
 		sourcePost: 'Sources'
 	};
@@ -28,7 +28,7 @@
 	var getColumnNames = function getColumnNames(row) {
 		var columns = row.split('\t');
 		debug('columns', columns);
-		if (columns.length <= 1) throw new Error('not enough columns');else {
+		if (columns.length <= 1) throw new Error('Warning: Not enough columns!');else {
 			return columns.map(function (c) {
 				return c.trim();
 			});
@@ -53,7 +53,7 @@
 			// debug('data', data)
 			return { names: names, data: data };
 		} else {
-			throw new Error('not enough rows');
+			throw new Error('Warning! Not enough rows!');
 		}
 	};
 
